@@ -1,9 +1,10 @@
 import csv
 
-from domainmodel.movie import Movie
-from domainmodel.actor import Actor
-from domainmodel.genre import Genre
-from domainmodel.director import Director
+from CS235FlixSkeleton.domainmodel.movie import Movie
+from CS235FlixSkeleton.domainmodel.actor import Actor
+from CS235FlixSkeleton.domainmodel.genre import Genre
+from CS235FlixSkeleton.domainmodel.director import Director
+
 
 class MovieFileCSVReader:
 
@@ -18,5 +19,6 @@ class MovieFileCSVReader:
             for row in movie_file_reader:
                 title = row['Title']
                 release_year = int(row['Year'])
-                print(f"Movie {index} with title: {title}, release year {release_year}")
+                print(
+                    f"Movie {index} with title: {title}, release year {release_year}")
                 index += 1

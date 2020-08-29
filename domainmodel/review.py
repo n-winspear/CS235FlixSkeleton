@@ -1,6 +1,6 @@
 from datetime import datetime
+from CS235FlixSkeleton.domainmodel.movie import Movie
 
-from domainmodel.movie import Movie
 
 class Review:
     pass
